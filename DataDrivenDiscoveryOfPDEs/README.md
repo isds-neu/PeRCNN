@@ -1,4 +1,4 @@
-## Description 
+## Data-driven discovery
 
 PeRCNN for discovery of PDEs from scarce and noisy measurement data
 
