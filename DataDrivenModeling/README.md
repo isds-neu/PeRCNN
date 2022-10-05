@@ -1,5 +1,5 @@
 
-## Description
+## Data reconstruction
 
 Physics-embedded recurrent convolutional neural network for data-driven modeling
 
