@@ -16,7 +16,7 @@ PeRCNN for discovery of PDEs from scarce and noisy measurement data
 
 ### Stage-1: data reconstruction
 
-In Stage-1, we use a physics-encoded recurrent network to reconstruct the high-fidelity data. This step uses the same rountine of https://github.com/Raocp/PeRCNN. 
+In Stage-1, we use a physics-encoded recurrent network to reconstruct the high-fidelity data. This step uses the same routine of https://github.com/Raocp/PeRCNN. 
 
 ### Stage-2: sparse regression
 
