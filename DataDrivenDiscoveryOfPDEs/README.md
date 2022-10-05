@@ -4,7 +4,7 @@ PeRCNN for discovery of PDEs from scarce and noisy measurement data
 
 ## Prerequisite
 
-Please download the data using the link provided in the ``data`` folder. 
+Please download the data using the link provided in the ``data/readme4data.txt`` file. 
 
 
 ## Methodology overview
