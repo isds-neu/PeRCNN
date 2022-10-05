@@ -39,16 +39,13 @@ Considering the traing data size being over large, we provide a Google drive lin
 
 ### Implementation
 
+Generally, we evaluate our `PeRCNN` on four tasks: 
+- Solving PDEs (compare w/ [PINN](https://www.sciencedirect.com/science/article/pii/S0021999118307125), [ConvLSTM](https://proceedings.neurips.cc/paper/2015/file/07563a3fe3bbe7e3ba84431ad9d055af-Paper.pdf))
+- Coefficients identification
+- Data reconstruction (compare w/ [ConvLSTM](https://proceedings.neurips.cc/paper/2015/file/07563a3fe3bbe7e3ba84431ad9d055af-Paper.pdf), [Recurrent ResNet](https://arxiv.org/pdf/1610.00081.pdf), [PDE-Net](https://arxiv.org/pdf/1710.09668.pdf), [DHPM](https://arxiv.org/pdf/1801.06637.pdf))
+- Discovering PDEs (compare w/ [ConvLSTM](https://proceedings.neurips.cc/paper/2015/file/07563a3fe3bbe7e3ba84431ad9d055af-Paper.pdf), [Recurrent ResNet](https://arxiv.org/pdf/1610.00081.pdf), [PDE-Net](https://arxiv.org/pdf/1710.09668.pdf), [DHPM](https://arxiv.org/pdf/1801.06637.pdf))
 
-#### Baseline models
-- Model A
-- Model B
-
-#### Ablation study
-
-The ablation codes are provided in folder ```Ablation```.
-- w/o A
-- w/o B
+We present three folders for solving PDEs, data reconstruction and equation discovery. The coefficients identification can be referred to the equation discovery folder, which is essentially the Stage-3 part. More implementation details can be found in each folder. 
 
 ## License
 
