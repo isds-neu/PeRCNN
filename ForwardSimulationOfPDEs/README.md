@@ -10,3 +10,7 @@ PeRCNN for solving reaction-diffusion equations
 
 ### Results
 
+
+![](https://github.com/isds-neu/PeRCNN/blob/main/ForwardSimulationOfPDEs/2d_lambda_omega/figures/uv_comparison_100.png)
+
+> Lambda-Omega Reaction-Diffusion equation
