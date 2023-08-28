@@ -11,7 +11,7 @@ import scipy.io as scio
 import time
 import os
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+os.environ['CUDA_VISIBLE_DEVICES'] = '3'
 torch.set_default_dtype(torch.float32)
 
 torch.manual_seed(66)
@@ -55,7 +55,7 @@ class RCNNCell(nn.Module):
 
         self.dx = 0.01
         self.dt = 0.5
-        self.mu_up = 3.89e-5  # upper bound for the diffusion coefficient
+        self.mu_up = 3.99e-5  # upper bound for the diffusion coefficient
         # Design the laplace_u term # [-1, 1]
         np.random.seed(1234)
         self.CA = torch.nn.Parameter(torch.tensor((np.random.rand()-0.5)*2, dtype=torch.float32), requires_grad=True)
@@ -617,7 +617,7 @@ if __name__ == '__main__':
     time_batch_size = time_steps
     steps = time_batch_size + 1
     effective_step = list(range(0, steps))
-    n_iters = 5000   # 10000 for 200 steps, 5000 for 4000 steps, 5000 for 800 steps
+    n_iters = 6000   # 10000 for 200 steps, 5000 for 4000 steps, 5000 for 800 steps
     learning_rate = 1e-3
     save_path = './model/'
 
